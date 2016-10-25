@@ -1,6 +1,7 @@
 # Algorithms
 My fun with algorithms.
 
-## Sort
+## Sorting algorithms
 - Bubble sort
 - Selection sort
+- Insertion sort

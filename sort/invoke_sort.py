@@ -3,6 +3,7 @@ import inspect
 import random
 import bubble_sort
 import selection_sort
+import insertion_sort
 
 def __generate_int_list(start, end):
 	unsorted = range(start, end)
@@ -21,6 +22,10 @@ def __resolve_algorithm(alg_name):
 		sort_function = bubble_sort.sort
 	elif "selection" == alg_name:
 		sort_function = selection_sort.sort
+	elif "insertion" == alg_name:
+		sort_function = insertion_sort.sort
+	else:
+		sort_function = None
 	
 	return sort_function
 
@@ -47,3 +52,5 @@ if __name__ == "__main__":
 
 		sorted_desc = sort_algorithm(unsorted, "desc")
 		print "Output (desc): %s" % __list_to_string(sorted_desc)
+	else:
+		print "Unknown sorting algorithm requested."
