@@ -8,7 +8,11 @@ My fun with algorithms.
 - Heap sort (wip)
 
 ## How to run sorting examples?
-	...algorithms$ python -m sort.invoke_sort sort_algorithm
+	# List implemented examples:
+	...algorithms$ python -m sort.invoke_sort le
+
+	# Run an example
+	...algorithms$ python -m sort.invoke_sort ${sort_algorithm_name}
 
 ## Data structures
 - Heap (wip)

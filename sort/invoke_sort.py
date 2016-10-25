@@ -34,11 +34,22 @@ def __check_input_args(args):
 
 def __print_usage_and_exit():
 	print "Usage: python -m sort.invoke_sort sort_algorithm"
+	print "To list implemented sorting examples: %s" % "python -m sort.invoke_sort le"
 	sys.exit(1)
+
+def __print_implemented_examples():
+	print "Implemented sorting examples are:"
+	examples = ["bubble", "selection", "insertion"]
+	for ex in examples:
+		print "\t%s" % ex
+	sys.exit(0)
 
 if __name__ == "__main__":
 	if not __check_input_args(sys.argv):
 		__print_usage_and_exit()
+
+	if "le" == sys.argv[1]:
+		__print_implemented_examples()
 
 	sort_algorithm = __resolve_algorithm(sys.argv[1])
 	if not sort_algorithm is None:
