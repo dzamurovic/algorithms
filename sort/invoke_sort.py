@@ -33,7 +33,7 @@ def __check_input_args(args):
 	return len(args) == 2
 
 def __print_usage_and_exit():
-	print "Usage: python invoke_sort.py sort_algorithm"
+	print "Usage: python -m sort.invoke_sort sort_algorithm"
 	sys.exit(1)
 
 if __name__ == "__main__":
